@@ -1,22 +1,24 @@
 package main
 
 import (
-	"crypto/sha256"
-	"encoding/hex"
-	"fmt"
+	"github.com/ressie-res/smh/cmd"
+	//"crypto/sha256"
+	//"encoding/hex"
+	//"fmt"
 )
 
 func main() {
 
-	var testpassword string
-	var hashespassword string
+	cmd.Execute()
+	//var testpassword string
+	//var hashespassword string
 
-	hashthisfella := sha256.New()
+	//hashthisfella := sha256.New()
 
-	fmt.Scan(&testpassword)
-	hashthisfella.Write([]byte(testpassword))
-	hashespassword = hex.EncodeToString(hashthisfella.Sum(nil))
+	//fmt.Scan(&testpassword)
+	//hashthisfella.Write([]byte(testpassword))
+	//hashespassword = hex.EncodeToString(hashthisfella.Sum(nil))
 
-	fmt.Println(hashespassword)
+	//fmt.Println(hashespassword)
 
 }
